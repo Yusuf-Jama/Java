@@ -1,5 +1,15 @@
-let Temperature = 10
+let cash = 40
+let price = 30 
+let difference = cash - price
 
-Temperature = Temperature * 1.8 + 32
+if (cash > price) {
+    console.log(`you paid extra here's your change, $${difference}`)
+}
 
-console.log(Temperature)
+else if (cash === price) {
+    console.log("you paid the exact price, have a nice day")
+}
+
+else {
+    console.log(`not enough money, you still owe ${price - cash} dollars`)
+}
