@@ -1,4 +1,4 @@
-let cash = 40
+let cash = 10
 let price = 30 
 let difference = cash - price
 
@@ -11,5 +11,5 @@ else if (cash === price) {
 }
 
 else {
-    console.log(`not enough money, you still owe ${price - cash} dollars`)
+    console.log(`not enough money, you still owe ${difference * -1} dollars`)
 }
