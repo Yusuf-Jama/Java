@@ -1,5 +1,5 @@
-const str = "frontend simplified"
-
-for (let i = 0; i < str.length; ++i){
-    console.log(str[i])
+function sumOfTwoNumbers(num1, num2){
+    return num1 - num2
 }
+
+console.log(sumOfTwoNumbers(10, 25))
