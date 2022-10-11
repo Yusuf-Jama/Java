@@ -8,19 +8,27 @@ let users = [
     lessonsCompleted: [0, 1],
 },
 {
-    username: `Dave`,
-    email: `hemail@gmail.com`,
-    password: `pass123`,
+    username: `Yui`,
+    email: `yuhboi@gmail.com`,
+    password: `qwerty123`,
     subscriptionStatus: `VIP`,
-    discordId: `Cheese#7496`,
-    lessonsCompleted: [0, 1, 2, 3]
+    discordId: `bugga#7496`,
+    lessonsCompleted: [0,],
 },
 {
-    username: `Yui`,
-    email: `nemail@gmail.com`,
-    password: `word123`,
+    username: `Zaah`,
+    email: `nadda@gmail.com`,
+    password: `passcode`,
     subscriptionStatus: `VIP`,
-    discordId: `BUgga#7496`,
+    discordId: `Cheese#7496`,
+    lessonsCompleted: [0, 1],
+},
+{
+    username: `Puff`,
+    email: `here@gmail.com`,
+    password: `passy123`,
+    subscriptionStatus: `VIP`,
+    discordId: `Cheesebugga#7496`,
     lessonsCompleted: [0, 1, 2, 3]
 }
 ]
@@ -35,9 +43,28 @@ function login(email, password) {
             else {
                 console.log(`password is wrong nigga`)
             }
+            return
         }
     }
 
 }
 
 login(`email@gmail.com`, `test23`)
+
+function register(name, email, password, 
+subscriptionStatus, discordId, lessonsCompleted){
+    let user = {
+        username: name, 
+        email: email,
+        password: password,
+        subscriptionStatus: subscriptionStatus,
+        discordId: discordId,
+        lessonsCompleted: lessonsCompleted,
+    }
+    users.push(user)
+}
+
+register (`Yusuf`, `email@gmail.com`, `test123`, `VIP`, `#Cheesebugga#7496`
+[0, 1])
+
+console.log(users)
