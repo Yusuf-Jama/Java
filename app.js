@@ -64,7 +64,14 @@ subscriptionStatus, discordId, lessonsCompleted){
     users.push(user)
 }
 
-register (`Yusuf`, `email@gmail.com`, `test123`, `VIP`, `#Cheesebugga#7496`
-[0, 1])
+register (
+username `Yusuf`, 
+email `email@gmail.com`, 
+password `test123`, 
+subscriptionStatus `VIP`, 
+discordId `#Cheesebugga#7496`,
+lessonsCompleted [0, 1])
 
 console.log(users)
+
+console.log(document)
